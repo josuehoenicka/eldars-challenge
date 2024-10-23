@@ -51,4 +51,4 @@
 
 - [LinkedIn](https://www.linkedin.com/in/josuehoenicka/)
 - [YouTube](https://www.youtube.com/@josuehoenicka)
-- [Instagram](https://www.instagram.com/josuehoenicka.ve/)
+- [Portfolio](https://josuegabrielhoenicka.web.app/)
