@@ -8,13 +8,13 @@
 
 ### 📚 Stack <a name="stack"></a>
 
-- [Angular](https://angular.dev/)
-- [PrimeNG](https://primeng.org/)
+- [Angular +16](https://angular.dev/)
+- [PrimeNG +16](https://primeng.org/)
 - [RxJS](https://rxjs.dev)
 - [NgRx](https://ngrx.io)
 - [jsPDF](https://www.npmjs.com/package/jspdf)
 - [JWT Decode](https://www.npmjs.com/package/jwt-decode)
-- [Node.js](https://nodejs.org/)
+- [Node.js +18](https://nodejs.org/)
 - [Firebase](https://firebase.google.com/)
 - [SonarLint](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2022)
 
