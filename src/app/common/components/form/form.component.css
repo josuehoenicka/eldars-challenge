@@ -1,0 +1,121 @@
+/* Desktop styles */
+form.p-fluid {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%; /* Asegurarse de que el ancho no supere el 100% */
+}
+
+label {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #007ad9;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+.p-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 2.5em 0 1em 0;
+}
+
+button {
+  width: 15vw;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007ad9;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.p-button-close {
+  background-color: var(--primary);
+}
+
+.p-button-save:disabled {
+  color: var(--light);
+  background-color: var(--dark);
+}
+
+.error {
+  border: none;
+  border: 1px solid red;
+}
+
+::ng-deep .p-dialog .p-dialog-header .p-dialog-title {
+  padding: 1em 0 0 2em;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  form.p-fluid {
+    padding: 15px;
+    box-shadow: none;
+  }
+
+  button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  textarea {
+    height: 80px;
+  }
+
+  .p-field {
+    margin: 1.5em 0;
+  }
+}
+
+/* Mobile styles (SS) */
+@media (max-width: 480px) {
+  form.p-fluid {
+    padding: 10px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  textarea {
+    height: 60px;
+  }
+
+  .p-field {
+    margin: 1em 0;
+  }
+
+  label {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,52 @@
+<p-toast key="toast"></p-toast>
+<form [formGroup]="form" class="p-fluid">
+  <div class="p-field">
+    <label for="product">Producto</label>
+    <textarea
+      id="product"
+      rows="10"
+      pInputTextarea
+      formControlName="product"
+      style="height: 6vh;"
+      [ngClass]="{
+        error: form.get('product')?.invalid
+      }"
+    ></textarea>
+  </div>
+
+  <div class="p-field">
+    <label for="description">Descripción</label>
+    <textarea
+      id="description"
+      rows="3"
+      pInputTextarea
+      formControlName="description"
+      [ngClass]="{
+        error: form.get('description')?.invalid
+      }"
+    ></textarea>
+  </div>
+
+  <div class="p-field">
+    <button
+      *ngIf="
+        this.modeSelected === this.eMode.CREATE ||
+        this.modeSelected === this.eMode.UPDATE
+      "
+      type="button"
+      pButton
+      label="Guardar"
+      class="p-button-save"
+      (click)="onSave()"
+      [disabled]="this.form.invalid"
+    ></button>
+    <button
+      *ngIf="this.modeSelected === this.eMode.READ"
+      type="button"
+      pButton
+      label="Cerrar"
+      class="p-button-close"
+      (click)="onClose()"
+    ></button>
+  </div>
+</form>

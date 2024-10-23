@@ -1,0 +1,42 @@
+<p-toast key="toast"></p-toast>
+<div class="login-container">
+  <article class="login-box">
+    <img src="/eldar.png" alt="ELDAR SRL" />
+    <form class="login-form" [formGroup]="loginForm">
+      <div>
+        <label for="email">Email</label>
+        <input
+          id="email"
+          class="login-input"
+          type="email"
+          pInputText
+          formControlName="email"
+          [ngClass]="{
+            'input-error': email?.invalid && (email?.touched || email?.dirty)
+          }"
+        />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input
+          id="password"
+          class="login-input"
+          type="password"
+          pInputText
+          formControlName="password"
+          [ngClass]="{
+            'input-error':
+              password?.invalid && (password?.touched || password?.dirty)
+          }"
+        />
+      </div>
+      <button
+        pButton
+        label="Iniciar sesion"
+        (click)="login()"
+        type="submit"
+        class="login-button"
+      ></button>
+    </form>
+  </article>
+</div>

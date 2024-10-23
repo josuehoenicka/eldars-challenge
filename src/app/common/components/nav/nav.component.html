@@ -1,0 +1,28 @@
+<div class="menu-container">
+  <p-toolbar>
+    <div>
+      <a href="https://www.eldars.com.ar/" target="_blank"
+        ><img src="/eldar.png" alt="ELDAR SRL" class="logo"
+      /></a>
+    </div>
+    <div class="p-toolbar-group-right">
+      <p-messages severity="warn" *ngIf="isAdmin" >
+        <ng-template pTemplate>
+          <img
+            style="margin-left: 0.5em"
+            src="/favicon.ico"
+            width="20"
+            alt="ELDARS SRL"
+          />
+          <div style="margin: 0.5em">ADMINISTRADOR</div>
+        </ng-template>
+      </p-messages>
+      <button
+        pButton
+        class="logout-button p-button-danger"
+        label="Salir"
+        (click)="logout()"
+      ></button>
+    </div>
+  </p-toolbar>
+</div>

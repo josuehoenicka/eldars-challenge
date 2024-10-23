@@ -1,0 +1,4 @@
+<p-toast key="toast"></p-toast>
+<app-nav *ngIf="authService.isAuthSignal()"></app-nav>
+<router-outlet></router-outlet>
+<app-footer *ngIf="authService.isAuthSignal()"></app-footer>

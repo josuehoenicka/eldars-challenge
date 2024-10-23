@@ -1,0 +1,54 @@
+/* Desktop styles */
+::ng-deep .p-toolbar {
+  display: flex;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: var(--gray);
+  padding-top: 1em;
+  padding-right: 3em;
+}
+
+.menu-container {
+  width: 100%;
+  background-color: var(--gray);
+}
+
+.logo {
+  width: 10em;
+  margin-left: 3em;
+}
+
+.p-menuitem-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-label {
+  margin-left: 8px;
+}
+
+.logout-container {
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+}
+
+.logout-button {
+  font-size: 1.2em;
+  margin-left: 1.5em;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .logo {
+    width: 10em;
+    margin-left: 1em;
+  }
+
+  ::ng-deep .p-messages {
+    display: none;
+  }
+}
