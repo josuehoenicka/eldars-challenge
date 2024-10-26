@@ -8,6 +8,14 @@
   background-color: var(--primary);
 }
 
+.progressSpinnerContainer {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .paginator-left {
   display: flex;
   justify-content: flex-start;

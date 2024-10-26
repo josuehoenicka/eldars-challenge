@@ -30,6 +30,9 @@
 </p-dialog>
 
 <div class="login-container">
+  <div class="progressSpinnerContainer" *ngIf="posts.length == 0">
+    <p-progressSpinner styleClass="progressSpinner" />
+  </div>
   <div class="posts-wrapper" *ngIf="posts.length > 0">
     <div class="posts-card">
       <div class="header">
@@ -103,7 +106,6 @@
         [scrollable]="true"
         [paginator]="true"
         [rows]="10"
-        [loading]="loading"
         styleClass="p-datatable-gridlines"
         [rowsPerPageOptions]="[10, 25, 50, 100]"
         [tableStyle]="{ 'min-width': '20vw' }"

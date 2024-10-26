@@ -18,6 +18,7 @@
     "@angular/platform-browser": "^18.0.0",
     "@angular/platform-browser-dynamic": "^18.0.0",
     "@angular/router": "^18.0.0",
+    "@ngrx/store": "^18.1.0",
     "jspdf": "^2.5.2",
     "jspdf-autotable": "^3.8.4",
     "jwt-decode": "^4.0.0",

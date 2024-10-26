@@ -20,6 +20,7 @@ import { ToastModule } from 'primeng/toast';
 import { FormsModule } from '@angular/forms';
 import { DialogModule } from 'primeng/dialog';
 import { SplitButtonModule } from 'primeng/splitbutton';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
 
 @Component({
   selector: 'app-listing',
@@ -35,6 +36,7 @@ import { SplitButtonModule } from 'primeng/splitbutton';
     FormsModule,
     DialogModule,
     SplitButtonModule,
+    ProgressSpinnerModule,
   ],
   providers: [
     MessageService,
@@ -55,7 +57,6 @@ export class ProductsComponent implements OnInit {
 
   /* Booleans */
   isAdmin!: boolean;
-  loading: boolean = false;
 
   /* Arrays */
   posts: iProduct[] = [];
@@ -91,11 +92,8 @@ export class ProductsComponent implements OnInit {
   }
 
   async ngOnInit() {
-    this.loading = true;
     this.isAdmin = this.authService.isAdmin();
     await this.getProducts();
-    if (this.isAdmin) this.openConfirmationDialog();
-    this.loading = false;
   }
 
   async getProducts(newProduct?: any, mode?: eModeCRUD) {
@@ -103,6 +101,7 @@ export class ProductsComponent implements OnInit {
     this.apiService.getProducts().subscribe({
       next: (res: any) => {
         if (mode === undefined) {
+          if (this.isAdmin) this.openConfirmationDialog();
           this.posts = res;
           return;
         }
