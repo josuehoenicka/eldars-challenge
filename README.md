@@ -8,15 +8,17 @@
 
 ### 📚 Stack <a name="stack"></a>
 
-- [Angular +16](https://angular.dev/)
-- [PrimeNG +16](https://primeng.org/)
-- [RxJS](https://rxjs.dev)
-- [NgRx](https://ngrx.io)
-- [jsPDF](https://www.npmjs.com/package/jspdf)
-- [JWT Decode](https://www.npmjs.com/package/jwt-decode)
-- [Node.js +18](https://nodejs.org/)
-- [Firebase](https://firebase.google.com/)
-- [SonarLint](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2022)
+###### Client-side:
+
+- [Angular](https://angular.dev/), [PrimeNG](https://primeng.org/), [RxJS](https://rxjs.dev), [NgRx](https://ngrx.io), [jsPDF](https://www.npmjs.com/package/jspdf)
+
+###### Server-side:
+
+- [Node.js](https://nodejs.org/), [Firebase](https://firebase.google.com/), [JWT Decode](https://www.npmjs.com/package/jwt-decode)
+
+###### Testing:
+
+- [SonarLint](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2022), [Jasmine](https://jasmine.github.io/), [Jest](https://jestjs.io/)
 
 ### ⚙️️ Setup <a name="setup"></a>
 
@@ -45,7 +47,7 @@
 
 ### 📊 Testing <a name="test"></a>
 
-- N/A (Trabajando en ello)
+<pre>ng test</pre>
 
 ### 👤 Dev - Josue Hoenicka <a name="authors"></a>
 

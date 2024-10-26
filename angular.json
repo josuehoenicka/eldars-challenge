@@ -7,7 +7,7 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "css"
         }
       },
       "root": "",
@@ -99,6 +99,17 @@
               "src/styles.css"
             ],
             "scripts": []
+          }
+        },
+        "e2e": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "devServerTarget": "eldar-challenge:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "eldar-challenge:serve:production"
+            }
           }
         }
       }
